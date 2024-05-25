@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'designerBplNNr.ui'
+## Form generated from reading UI file 'stacked_UIzBlLYV.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -15,8 +15,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QLabel, QSizePolicy, QStackedWidget,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QLabel, QPushButton, QSizePolicy,
+    QStackedWidget, QVBoxLayout, QWidget)
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -42,18 +42,22 @@ class Ui_Form(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.label = QLabel(self.verticalLayoutWidget)
         self.label.setObjectName(u"label")
-        self.label.setPixmap(QPixmap(u"E:/Dict_with_Figma/Group 1.png"))
-        self.label.setAlignment(Qt.AlignCenter)
+        self.label.setPixmap(QPixmap(u"Group 1.png"))
 
         self.verticalLayout.addWidget(self.label)
 
         self.label_2 = QLabel(self.verticalLayoutWidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setPixmap(QPixmap(u"E:/Dict_with_Figma/Dicty.png"))
-        self.label_2.setAlignment(Qt.AlignCenter)
+        self.label_2.setPixmap(QPixmap(u"Dicty.png"))
 
         self.verticalLayout.addWidget(self.label_2)
 
+        self.pushButton = QPushButton(self.page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(120, 110, 75, 24))
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
         self.stackedWidget.addWidget(self.page)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
@@ -74,5 +78,6 @@ class Ui_Form(object):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.label.setText("")
         self.label_2.setText("")
+        self.pushButton.setText(QCoreApplication.translate("Form", u"PushButton", None))
     # retranslateUi
 
