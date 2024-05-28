@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'cartuiwSSwCQ.ui'
+## Form generated from reading UI file 'cartuioAVYWY.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -61,6 +61,7 @@ class Ui_Form(object):
         sizePolicy1.setHeightForWidth(self.lbl_text_definition.sizePolicy().hasHeightForWidth())
         self.lbl_text_definition.setSizePolicy(sizePolicy1)
         self.lbl_text_definition.setMinimumSize(QSize(0, 0))
+        self.lbl_text_definition.setWordWrap(True)
 
         self.horizontalLayout.addWidget(self.lbl_text_definition)
 

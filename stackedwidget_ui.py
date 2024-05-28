@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'stacked_UIGgDIcn.ui'
+## Form generated from reading UI file 'stacked_UIrzoNTS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -89,11 +89,9 @@ class Ui_Form(object):
 "padding: 0 0 0 10\n"
 "}\n"
 "\n"
-"#page_2_btn_voice {\n"
+"QToolButton {\n"
 "border:rgba(255, 255, 255, 0);\n"
 "}\n"
-"\n"
-"\n"
 "\n"
 "#widget_word {\n"
 "background-color: rgba(0, 0, 0, 0.1);\n"
@@ -202,12 +200,20 @@ class Ui_Form(object):
 
         self.horizontalLayout_3.addWidget(self.page_2_btn_settings)
 
+        self.page_2_btn_read = QToolButton(self.page_2)
+        self.page_2_btn_read.setObjectName(u"page_2_btn_read")
+        self.page_2_btn_read.setGeometry(QRect(300, 100, 21, 22))
+        icon4 = QIcon()
+        icon4.addFile(u"pictures/read.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.page_2_btn_read.setIcon(icon4)
+        self.page_2_btn_read.setIconSize(QSize(20, 20))
         self.stackedWidget.addWidget(self.page_2)
         self.page_2_line_edit.raise_()
         self.page_2_btn_voice.raise_()
         self.horizontalLayoutWidget_2.raise_()
         self.widget_word.raise_()
         self.widget.raise_()
+        self.page_2_btn_read.raise_()
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.page_3.setStyleSheet(u"QLabel {\n"
@@ -232,7 +238,7 @@ class Ui_Form(object):
 "padding: 0 0 0 10\n"
 "}\n"
 "\n"
-"#page_3_btn_voice {\n"
+"QToolButton {\n"
 "border:rgba(255, 255, 255, 0);\n"
 "}\n"
 "\n"
@@ -301,9 +307,9 @@ class Ui_Form(object):
         self.page_3_btn_home = QPushButton(self.horizontalLayoutWidget_8)
         self.page_3_btn_home.setObjectName(u"page_3_btn_home")
         self.page_3_btn_home.setMaximumSize(QSize(16777215, 80))
-        icon4 = QIcon()
-        icon4.addFile(u"pictures/home.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.page_3_btn_home.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u"pictures/home.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.page_3_btn_home.setIcon(icon5)
         self.page_3_btn_home.setIconSize(QSize(32, 32))
 
         self.horizontalLayout_8.addWidget(self.page_3_btn_home)
@@ -311,9 +317,9 @@ class Ui_Form(object):
         self.page_3_btn_saved = QPushButton(self.horizontalLayoutWidget_8)
         self.page_3_btn_saved.setObjectName(u"page_3_btn_saved")
         self.page_3_btn_saved.setMaximumSize(QSize(16777215, 80))
-        icon5 = QIcon()
-        icon5.addFile(u"pictures/saved_active.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.page_3_btn_saved.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u"pictures/saved_active.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.page_3_btn_saved.setIcon(icon6)
         self.page_3_btn_saved.setIconSize(QSize(32, 32))
 
         self.horizontalLayout_8.addWidget(self.page_3_btn_saved)
@@ -329,12 +335,18 @@ class Ui_Form(object):
         self.page_3_line_edit = QLineEdit(self.page_3)
         self.page_3_line_edit.setObjectName(u"page_3_line_edit")
         self.page_3_line_edit.setGeometry(QRect(20, 90, 348, 42))
+        self.page_3_btn_read = QToolButton(self.page_3)
+        self.page_3_btn_read.setObjectName(u"page_3_btn_read")
+        self.page_3_btn_read.setGeometry(QRect(300, 100, 21, 22))
+        self.page_3_btn_read.setIcon(icon4)
+        self.page_3_btn_read.setIconSize(QSize(20, 20))
         self.stackedWidget.addWidget(self.page_3)
         self.page_3_line_edit.raise_()
         self.listWidget.raise_()
         self.page_3_btn_voice.raise_()
         self.horizontalLayoutWidget_9.raise_()
         self.widget_3.raise_()
+        self.page_3_btn_read.raise_()
         self.page_4 = QWidget()
         self.page_4.setObjectName(u"page_4")
         self.page_4.setStyleSheet(u"#widget_4 {\n"
@@ -415,9 +427,9 @@ class Ui_Form(object):
         self.page_4_btn_show_suggestions = QPushButton(self.widget_7)
         self.page_4_btn_show_suggestions.setObjectName(u"page_4_btn_show_suggestions")
         self.page_4_btn_show_suggestions.setGeometry(QRect(284, 20, 61, 30))
-        icon6 = QIcon()
-        icon6.addFile(u"pictures/Toggle_Off.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.page_4_btn_show_suggestions.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u"pictures/Toggle_Off.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.page_4_btn_show_suggestions.setIcon(icon7)
         self.page_4_btn_show_suggestions.setIconSize(QSize(40, 40))
 
         self.verticalLayout_2.addWidget(self.widget_7)
@@ -431,7 +443,7 @@ class Ui_Form(object):
         self.page_4_btn_show_keyboard = QPushButton(self.widget_6)
         self.page_4_btn_show_keyboard.setObjectName(u"page_4_btn_show_keyboard")
         self.page_4_btn_show_keyboard.setGeometry(QRect(284, 20, 61, 30))
-        self.page_4_btn_show_keyboard.setIcon(icon6)
+        self.page_4_btn_show_keyboard.setIcon(icon7)
         self.page_4_btn_show_keyboard.setIconSize(QSize(40, 40))
 
         self.verticalLayout_2.addWidget(self.widget_6)
@@ -445,9 +457,9 @@ class Ui_Form(object):
         self.page_4_btn_ads = QPushButton(self.widget_4)
         self.page_4_btn_ads.setObjectName(u"page_4_btn_ads")
         self.page_4_btn_ads.setGeometry(QRect(300, 20, 41, 31))
-        icon7 = QIcon()
-        icon7.addFile(u"pictures/union-1.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.page_4_btn_ads.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u"pictures/union-1.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.page_4_btn_ads.setIcon(icon8)
         self.page_4_btn_ads.setIconSize(QSize(40, 40))
 
         self.verticalLayout_2.addWidget(self.widget_4)
@@ -461,7 +473,7 @@ class Ui_Form(object):
         self.page_4_btn_terms_of_use = QPushButton(self.widget_5)
         self.page_4_btn_terms_of_use.setObjectName(u"page_4_btn_terms_of_use")
         self.page_4_btn_terms_of_use.setGeometry(QRect(300, 20, 41, 30))
-        self.page_4_btn_terms_of_use.setIcon(icon7)
+        self.page_4_btn_terms_of_use.setIcon(icon8)
         self.page_4_btn_terms_of_use.setIconSize(QSize(40, 40))
 
         self.verticalLayout_2.addWidget(self.widget_5)
@@ -498,7 +510,7 @@ class Ui_Form(object):
         self.page_4_btn_home = QPushButton(self.horizontalLayoutWidget_5)
         self.page_4_btn_home.setObjectName(u"page_4_btn_home")
         self.page_4_btn_home.setMaximumSize(QSize(16777215, 80))
-        self.page_4_btn_home.setIcon(icon4)
+        self.page_4_btn_home.setIcon(icon5)
         self.page_4_btn_home.setIconSize(QSize(32, 32))
 
         self.horizontalLayout_5.addWidget(self.page_4_btn_home)
@@ -514,9 +526,9 @@ class Ui_Form(object):
         self.page_4_btn_settings = QPushButton(self.horizontalLayoutWidget_5)
         self.page_4_btn_settings.setObjectName(u"page_4_btn_settings")
         self.page_4_btn_settings.setMaximumSize(QSize(16777215, 80))
-        icon8 = QIcon()
-        icon8.addFile(u"pictures/settings_active.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.page_4_btn_settings.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u"pictures/settings_active.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.page_4_btn_settings.setIcon(icon9)
         self.page_4_btn_settings.setIconSize(QSize(32, 32))
 
         self.horizontalLayout_5.addWidget(self.page_4_btn_settings)
@@ -541,11 +553,9 @@ class Ui_Form(object):
 "padding: 0 0 0 10\n"
 "}\n"
 "\n"
-"#page_5_btn_voice {\n"
+"QToolButton{\n"
 "border:rgba(255, 255, 255, 0);\n"
 "}\n"
-"\n"
-"\n"
 "\n"
 "#widget_word {\n"
 "background-color: rgba(0, 0, 0, 0.1);\n"
@@ -555,10 +565,6 @@ class Ui_Form(object):
 "background-color: rgba(171, 171, 171, 0);\n"
 "border:rgba(255, 255, 255, 0);\n"
 "}")
-        self.page_5_btn_voice = QToolButton(self.page_5)
-        self.page_5_btn_voice.setObjectName(u"page_5_btn_voice")
-        self.page_5_btn_voice.setGeometry(QRect(320, 100, 30, 22))
-        self.page_5_btn_voice.setIcon(icon)
         self.page_5_line_edit = QLineEdit(self.page_5)
         self.page_5_line_edit.setObjectName(u"page_5_line_edit")
         self.page_5_line_edit.setGeometry(QRect(20, 90, 348, 42))
@@ -621,7 +627,7 @@ class Ui_Form(object):
         self.page_5_btn_home = QPushButton(self.horizontalLayoutWidget_12)
         self.page_5_btn_home.setObjectName(u"page_5_btn_home")
         self.page_5_btn_home.setMaximumSize(QSize(16777215, 80))
-        self.page_5_btn_home.setIcon(icon4)
+        self.page_5_btn_home.setIcon(icon5)
         self.page_5_btn_home.setIconSize(QSize(32, 32))
 
         self.horizontalLayout_12.addWidget(self.page_5_btn_home)
@@ -642,16 +648,16 @@ class Ui_Form(object):
 
         self.horizontalLayout_12.addWidget(self.page_5_btn_settings)
 
+        self.page_5_btn_read = QToolButton(self.page_5)
+        self.page_5_btn_read.setObjectName(u"page_5_btn_read")
+        self.page_5_btn_read.setGeometry(QRect(320, 100, 21, 22))
+        self.page_5_btn_read.setIcon(icon4)
+        self.page_5_btn_read.setIconSize(QSize(20, 20))
         self.stackedWidget.addWidget(self.page_5)
-        self.page_5_line_edit.raise_()
-        self.page_5_btn_voice.raise_()
-        self.widget_word_2.raise_()
-        self.horizontalLayoutWidget_10.raise_()
-        self.widget_8.raise_()
 
         self.retranslateUi(Form)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(Form)
@@ -669,12 +675,14 @@ class Ui_Form(object):
         self.page_2_btn_home.setText("")
         self.page_2_btn_saved.setText("")
         self.page_2_btn_settings.setText("")
+        self.page_2_btn_read.setText(QCoreApplication.translate("Form", u"...", None))
         self.page_3_btn_voice.setText(QCoreApplication.translate("Form", u"...", None))
         self.lbl_search_5.setText(QCoreApplication.translate("Form", u"Bookmarks", None))
         self.page_3_btn_home.setText("")
         self.page_3_btn_saved.setText("")
         self.page_3_btn_settings.setText("")
         self.page_3_line_edit.setPlaceholderText(QCoreApplication.translate("Form", u"Search", None))
+        self.page_3_btn_read.setText(QCoreApplication.translate("Form", u"...", None))
         self.lbl_search_4.setText(QCoreApplication.translate("Form", u"Settings", None))
         self.label_3.setText(QCoreApplication.translate("Form", u"Show suggestions", None))
         self.page_4_btn_show_suggestions.setText("")
@@ -687,7 +695,6 @@ class Ui_Form(object):
         self.page_4_btn_home.setText("")
         self.page_4_btn_saved.setText("")
         self.page_4_btn_settings.setText("")
-        self.page_5_btn_voice.setText(QCoreApplication.translate("Form", u"...", None))
         self.page_5_line_edit.setPlaceholderText(QCoreApplication.translate("Form", u"Search", None))
         self.page_5_label_title.setText("")
         self.page_5_plainTextEdit_definition.setPlainText("")
@@ -695,5 +702,6 @@ class Ui_Form(object):
         self.page_5_btn_home.setText("")
         self.page_5_btn_saved.setText("")
         self.page_5_btn_settings.setText("")
+        self.page_5_btn_read.setText(QCoreApplication.translate("Form", u"...", None))
     # retranslateUi
 

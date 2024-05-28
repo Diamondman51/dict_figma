@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="pictures">
+    <file>pictures/read.png</file>
+    <file>pictures/Dicty.png</file>
+    <file>pictures/Group 1.png</file>
+    <file>pictures/home.png</file>
+    <file>pictures/home_active.png</file>
+    <file>pictures/res.qrc</file>
+    <file>pictures/saved.png</file>
+    <file>pictures/saved_active.png</file>
+    <file>pictures/settings.png</file>
+    <file>pictures/settings_active.png</file>
+    <file>pictures/Toggle_Off.png</file>
+    <file>pictures/Toggle_On.png</file>
+    <file>pictures/union-1.png</file>
+    <file>pictures/voice.png</file>
+  </qresource>
+</RCC>
