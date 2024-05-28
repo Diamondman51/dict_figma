@@ -1,3 +1,4 @@
+import difflib
 import json
 
 from PySide6 import QtCore
@@ -33,8 +34,10 @@ class Control(QWidget, Ui_Form):
         self.page_4_btn_show_suggestions.clicked.connect(self.activate_disactivate_suggestions)
         self.page_4_btn_show_keyboard.clicked.connect(self.activate_disactivate_keyboard)
         self.page_2_btn_voice.clicked.connect(self.speech_recognition_thread)
+        self.page_3_btn_voice.clicked.connect(self.speech_recognition_thread)
         self.speech_recognition = Speech_recognition_thread()
         self.number_of_carts(50)
+        self.listWidget.currentItem()
         self.listWidget.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
 
     def number_of_carts(self, num):
@@ -86,20 +89,28 @@ class Control(QWidget, Ui_Form):
         self.stackedWidget.setCurrentIndex(2)
 
     def keyPressEvent(self, event: QKeyEvent):
-        if event.key() == QtCore.Qt.Key_Enter and self.page_2_line_edit.text():
-            print(2)
-            self.search_btn_clicked()
+        if event.key() == QtCore.Qt.Key_Enter and ((self.page_2_line_edit.text() or self.page_3_line_edit.text()) or (self.page_2_line_edit.text() and self.page_3_line_edit.text())):
+            num = self.stackedWidget.currentIndex()
+            print(num)
+            self.search_btn_clicked(num)
 
     def swap_to_1(self):
         self.timer.stop()
         self.stackedWidget.setCurrentIndex(1)
 
-    def search_btn_clicked(self):
-        word = self.page_2_line_edit.text()
-        if word in self.data.keys():
-            self.page_2_label_title.setText(word)
-            self.page_2_plainTextEdit_definition.setPlainText(self.data[word])
-
+    def search_btn_clicked(self, num):
+        if num == 1:
+            word = self.page_2_line_edit.text()
+            if word in self.data.keys():
+                self.page_2_label_title.setText(word)
+                self.page_2_plainTextEdit_definition.setPlainText(self.data[word])
+        elif num == 2:
+            self.listWidget.clear()
+            word1 = self.page_3_line_edit.text()
+            if word1 in self.data.keys():
+                words = difflib.get_close_matches(word1, self.data, 5)
+                for word2 in words:
+                    self.create_cart(word2, self.data[word2])
 
     def load_file(self):
         file = open("data.json", 'r')
