@@ -4,7 +4,7 @@ from PySide6.QtWidgets import QApplication
 
 from control import Control
 
-app = QApplication()
+app = QApplicatiqon()
 controller = Control()
 controller.show()
 app.exec()
