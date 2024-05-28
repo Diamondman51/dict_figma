@@ -56,14 +56,14 @@ class Ui_Form(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.label = QLabel(self.verticalLayoutWidget)
         self.label.setObjectName(u"label")
-        self.label.setPixmap(QPixmap(u"Group 1.png"))
+        self.label.setPixmap(QPixmap(u"pictures/Group 1.png"))
         self.label.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout.addWidget(self.label)
 
         self.label_2 = QLabel(self.verticalLayoutWidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setPixmap(QPixmap(u"Dicty.png"))
+        self.label_2.setPixmap(QPixmap(u"pictures/Dicty.png"))
         self.label_2.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout.addWidget(self.label_2)
@@ -107,7 +107,7 @@ class Ui_Form(object):
         self.page_2_btn_voice.setObjectName(u"page_2_btn_voice")
         self.page_2_btn_voice.setGeometry(QRect(320, 100, 30, 22))
         icon = QIcon()
-        icon.addFile(u"voice.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"pictures/voice.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_2_btn_voice.setIcon(icon)
         self.horizontalLayoutWidget_2 = QWidget(self.page_2)
         self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
@@ -176,7 +176,7 @@ class Ui_Form(object):
         self.page_2_btn_home.setObjectName(u"page_2_btn_home")
         self.page_2_btn_home.setMaximumSize(QSize(16777215, 80))
         icon1 = QIcon()
-        icon1.addFile(u"home_active.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"pictures/home_active.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_2_btn_home.setIcon(icon1)
         self.page_2_btn_home.setIconSize(QSize(32, 32))
 
@@ -186,7 +186,7 @@ class Ui_Form(object):
         self.page_2_btn_saved.setObjectName(u"page_2_btn_saved")
         self.page_2_btn_saved.setMaximumSize(QSize(16777215, 80))
         icon2 = QIcon()
-        icon2.addFile(u"saved.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"pictures/saved.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_2_btn_saved.setIcon(icon2)
         self.page_2_btn_saved.setIconSize(QSize(32, 32))
 
@@ -196,7 +196,7 @@ class Ui_Form(object):
         self.page_2_btn_settings.setObjectName(u"page_2_btn_settings")
         self.page_2_btn_settings.setMaximumSize(QSize(16777215, 80))
         icon3 = QIcon()
-        icon3.addFile(u"settings.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"pictures/settings.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_2_btn_settings.setIcon(icon3)
         self.page_2_btn_settings.setIconSize(QSize(32, 32))
 
@@ -302,7 +302,7 @@ class Ui_Form(object):
         self.page_3_btn_home.setObjectName(u"page_3_btn_home")
         self.page_3_btn_home.setMaximumSize(QSize(16777215, 80))
         icon4 = QIcon()
-        icon4.addFile(u"home.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"pictures/home.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_3_btn_home.setIcon(icon4)
         self.page_3_btn_home.setIconSize(QSize(32, 32))
 
@@ -312,7 +312,7 @@ class Ui_Form(object):
         self.page_3_btn_saved.setObjectName(u"page_3_btn_saved")
         self.page_3_btn_saved.setMaximumSize(QSize(16777215, 80))
         icon5 = QIcon()
-        icon5.addFile(u"saved_active.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"pictures/saved_active.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_3_btn_saved.setIcon(icon5)
         self.page_3_btn_saved.setIconSize(QSize(32, 32))
 
@@ -416,7 +416,7 @@ class Ui_Form(object):
         self.page_4_btn_show_suggestions.setObjectName(u"page_4_btn_show_suggestions")
         self.page_4_btn_show_suggestions.setGeometry(QRect(284, 20, 61, 30))
         icon6 = QIcon()
-        icon6.addFile(u"Toggle_Off.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u"pictures/Toggle_Off.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_4_btn_show_suggestions.setIcon(icon6)
         self.page_4_btn_show_suggestions.setIconSize(QSize(40, 40))
 
@@ -446,7 +446,7 @@ class Ui_Form(object):
         self.page_4_btn_ads.setObjectName(u"page_4_btn_ads")
         self.page_4_btn_ads.setGeometry(QRect(300, 20, 41, 31))
         icon7 = QIcon()
-        icon7.addFile(u"union-1.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u"pictures/union-1.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_4_btn_ads.setIcon(icon7)
         self.page_4_btn_ads.setIconSize(QSize(40, 40))
 
@@ -515,7 +515,7 @@ class Ui_Form(object):
         self.page_4_btn_settings.setObjectName(u"page_4_btn_settings")
         self.page_4_btn_settings.setMaximumSize(QSize(16777215, 80))
         icon8 = QIcon()
-        icon8.addFile(u"settings_active.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon8.addFile(u"pictures/settings_active.png", QSize(), QIcon.Normal, QIcon.Off)
         self.page_4_btn_settings.setIcon(icon8)
         self.page_4_btn_settings.setIconSize(QSize(32, 32))
 

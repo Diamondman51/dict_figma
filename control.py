@@ -20,7 +20,7 @@ class Control(QWidget, Ui_Form):
         self.stackedWidget.setCurrentIndex(0)
         self.timer = QTimer()
         self.timer.timeout.connect(self.swap_to_1)
-        self.timer.start(20)
+        self.timer.start(2000)
         self.page_2_btn_saved.clicked.connect(self.swap_to_2)
         self.page_2_btn_settings.clicked.connect(self.swap_to_3)
         self.page_2_btn_home.clicked.connect(self.swap_to_1)
@@ -66,18 +66,18 @@ class Control(QWidget, Ui_Form):
     def activate_disactivate_keyboard(self):
         if not self.keyboard_flag:
             self.keyboard_flag = True
-            self.page_4_btn_show_keyboard.setIcon(QIcon('Toggle_On.png'))
+            self.page_4_btn_show_keyboard.setIcon(QIcon('pictures/Toggle_On.png'))
         else:
             self.keyboard_flag = False
-            self.page_4_btn_show_keyboard.setIcon(QIcon('Toggle_Off.png'))
+            self.page_4_btn_show_keyboard.setIcon(QIcon('pictures/Toggle_Off.png'))
 
     def activate_disactivate_suggestions(self):
         if not self.suggestion_flag:
             self.suggestion_flag = True
-            self.page_4_btn_show_suggestions.setIcon(QIcon('Toggle_On.png'))
+            self.page_4_btn_show_suggestions.setIcon(QIcon('pictures/Toggle_On.png'))
         else:
             self.suggestion_flag = False
-            self.page_4_btn_show_suggestions.setIcon(QIcon('Toggle_Off.png'))
+            self.page_4_btn_show_suggestions.setIcon(QIcon('pictures/Toggle_Off.png'))
 
     def swap_to_3(self):
         self.stackedWidget.setCurrentIndex(3)
