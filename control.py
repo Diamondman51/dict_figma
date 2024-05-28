@@ -37,6 +37,7 @@ class Control(QWidget, Ui_Form):
         self.page_3_btn_voice.clicked.connect(self.speech_recognition_thread)
         self.speech_recognition = Speech_recognition_thread()
         self.number_of_carts(50)
+        # make double click -> move to page 5
         self.listWidget.currentItem()
         self.listWidget.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
 
