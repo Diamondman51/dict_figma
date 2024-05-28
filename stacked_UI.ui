@@ -6,48 +6,74 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>316</width>
-    <height>684</height>
+    <width>390</width>
+    <height>683</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
-    <width>316</width>
-    <height>684</height>
+    <width>390</width>
+    <height>683</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>400</width>
-    <height>684</height>
+    <width>390</width>
+    <height>683</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget {
-background-color:rgba(0, 0, 10, 0.5);
-}
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>316</width>
-     <height>684</height>
+     <width>390</width>
+     <height>683</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>14</width>
+     <height>683</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>644</height>
+    </size>
+   </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>2</number>
    </property>
    <widget class="QWidget" name="page">
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+	background-color: rgb(0, 0, 0);
+}</string>
+    </property>
     <widget class="QWidget" name="verticalLayoutWidget">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>110</x>
        <y>210</y>
        <width>160</width>
        <height>281</height>
@@ -60,10 +86,10 @@ background-color:rgba(0, 0, 10, 0.5);
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>../Dict_with_Figma/Group 1.png</pixmap>
+         <pixmap>Group 1.png</pixmap>
         </property>
         <property name="alignment">
-         <set>Qt::AlignmentFlag::AlignCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -73,31 +99,1172 @@ background-color:rgba(0, 0, 10, 0.5);
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>../Dict_with_Figma/Dicty.png</pixmap>
+         <pixmap>Dicty.png</pixmap>
         </property>
         <property name="alignment">
-         <set>Qt::AlignmentFlag::AlignCenter</set>
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>642</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+padding: 0 0 5 0;
+}
+
+#lbl_search {
+background-color: rgb(0, 0, 0);
+color: white;
+font-size: 20px;
+}
+
+#page_2_line_edit{
+background-color: rgba(0, 0, 0, 0.1);
+border:rgba(255, 255, 255, 0);
+border-radius: 20px;
+padding: 0 0 0 10
+}
+
+#page_2_btn_voice {
+border:rgba(255, 255, 255, 0);
+}
+
+
+
+#widget_word {
+background-color: rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+#page_2_plainTextEdit_definition {
+background-color: rgba(171, 171, 171, 0);
+border:rgba(255, 255, 255, 0);
+}</string>
+    </property>
+    <widget class="QToolButton" name="page_2_btn_voice">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>120</y>
-       <width>75</width>
-       <height>24</height>
+       <x>320</x>
+       <y>100</y>
+       <width>30</width>
+       <height>22</height>
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>voice.png</normaloff>voice.png</iconset>
      </property>
     </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-10</y>
+       <width>411</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="lbl_search">
+        <property name="maximumSize">
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget_word" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>348</width>
+       <height>242</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="page_2_label_title">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>25</y>
+        <width>190</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="page_2_plainTextEdit_definition">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>311</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="page_2_line_edit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>348</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>605</y>
+       <width>389</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  background-color: black;
+  selection-color: yellow;
+  selection-background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  color:white;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+QPushButton {
+border: rgba(255, 255, 255, 0);
+padding: 0 0 10 0;
+}
+
+QPushButton:pressed { 
+  margin: 0 1 0 1;
+}
+</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>0</y>
+        <width>391</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="page_2_btn_home">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>home_active.png</normaloff>home_active.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_2_btn_saved">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>saved.png</normaloff>saved.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_2_btn_settings">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>settings.png</normaloff>settings.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <zorder>page_2_line_edit</zorder>
+    <zorder>page_2_btn_voice</zorder>
+    <zorder>horizontalLayoutWidget_2</zorder>
+    <zorder>widget_word</zorder>
+    <zorder>widget</zorder>
    </widget>
-   <widget class="QWidget" name="page_2"/>
-   <widget class="QWidget" name="page_3"/>
+   <widget class="QWidget" name="page_3">
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+padding: 0 0 5 0;
+}
+
+#lbl_search_5 {
+background-color: rgb(0, 0, 0);
+color: white;
+font-size: 20px;
+}
+
+QPushButton {
+border: rgba(255, 255, 255, 0);
+padding: 0 0 10 0;
+}
+
+#page_3_line_edit{
+background-color: rgba(0, 0, 0, 0.1);
+border:rgba(255, 255, 255, 0);
+border-radius: 20px;
+padding: 0 0 0 10
+}
+
+#page_3_btn_voice {
+border:rgba(255, 255, 255, 0);
+}
+
+
+
+#widget_word_3 {
+background-color: rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+QListView {
+background-color: rgba(255, 255, 255, 0);
+border: rgba(255, 255, 255, 0);
+}</string>
+    </property>
+    <widget class="QToolButton" name="page_3_btn_voice">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>30</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>voice.png</normaloff>voice.png</iconset>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_9">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-10</y>
+       <width>411</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QLabel" name="lbl_search_5">
+        <property name="maximumSize">
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Bookmarks</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>352</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>605</y>
+       <width>390</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  background-color: black;
+  selection-color: yellow;
+  selection-background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  color:white;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+QPushButton {
+border: rgba(255, 255, 255, 0);
+padding: 0 0 10 0;
+}
+
+QPushButton:pressed { 
+  margin: 0 1 0 1;
+}
+
+</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>0</y>
+        <width>391</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="page_3_btn_home">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>home.png</normaloff>home.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_3_btn_saved">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>saved_active.png</normaloff>saved_active.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_3_btn_settings">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>settings.png</normaloff>settings.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="page_3_line_edit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>348</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Search</string>
+     </property>
+    </widget>
+    <zorder>page_3_line_edit</zorder>
+    <zorder>listWidget</zorder>
+    <zorder>page_3_btn_voice</zorder>
+    <zorder>horizontalLayoutWidget_9</zorder>
+    <zorder>widget_3</zorder>
+   </widget>
+   <widget class="QWidget" name="page_4">
+    <property name="styleSheet">
+     <string notr="true">#widget_4 {
+background-color: rgba(206, 206, 206, 0.5);
+border-radius: 15px;
+}
+
+#widget_5 {
+background-color: rgba(206, 206, 206, 0.5);
+border-radius: 15px;
+}
+
+#widget_6 {
+background-color: rgba(206, 206, 206, 0.5);
+border-radius: 15px;
+}
+
+#widget_7 {
+background-color: rgba(206, 206, 206, 0.5);
+border-radius: 15px;
+}
+
+
+
+QPushButton {
+border: rgba(255, 255, 255, 0);
+padding: 0 0 10 0;
+}
+
+#page_4_btn_ads {
+
+  selection-color: yellow;
+  selection-background-color: black;
+  border-radius: 5px;
+  color:white;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+#page_4_btn_ads:pressed { 
+  margin: 0 3 0 3;
+}
+
+
+#lbl_search_4 {
+background-color: rgb(0, 0, 0);
+color: white;
+font-size: 20px;
+padding: 0 0 5 0
+}</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-10</y>
+       <width>411</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QLabel" name="lbl_search_4">
+        <property name="maximumSize">
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Settings</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>351</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_7" native="true">
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>12</y>
+           <width>180</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Show suggestions</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="page_4_btn_show_suggestions">
+         <property name="geometry">
+          <rect>
+           <x>284</x>
+           <y>20</y>
+           <width>61</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Toggle_Off.png</normaloff>Toggle_Off.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_6" native="true">
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>12</y>
+           <width>150</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Show keyboard</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="page_4_btn_show_keyboard">
+         <property name="geometry">
+          <rect>
+           <x>284</x>
+           <y>20</y>
+           <width>61</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>Toggle_Off.png</normaloff>Toggle_Off.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>12</y>
+           <width>150</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Remove ads</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="page_4_btn_ads">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>20</y>
+           <width>41</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>union-1.png</normaloff>union-1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_5" native="true">
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>12</y>
+           <width>150</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Terms of use</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="page_4_btn_terms_of_use">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>20</y>
+           <width>41</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>union-1.png</normaloff>union-1.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>605</y>
+       <width>389</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  background-color: black;
+  selection-color: yellow;
+  selection-background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  color:white;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+QPushButton {
+border: rgba(255, 255, 255, 0);
+padding: 0 0 10 0;
+}
+
+QPushButton:pressed { 
+  margin: 0 1 0 1;
+}</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>0</y>
+        <width>391</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="page_4_btn_home">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>home.png</normaloff>home.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_4_btn_saved">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>saved.png</normaloff>saved.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_4_btn_settings">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>settings_active.png</normaloff>settings_active.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_5">
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+padding: 0 0 5 0;
+}
+
+#lbl_search_2 {
+background-color: rgb(0, 0, 0);
+color: white;
+font-size: 20px;
+}
+
+#page_5_line_edit{
+background-color: rgba(0, 0, 0, 0.1);
+border:rgba(255, 255, 255, 0);
+border-radius: 20px;
+padding: 0 0 0 10
+}
+
+#page_5_btn_voice {
+border:rgba(255, 255, 255, 0);
+}
+
+
+
+#widget_word {
+background-color: rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+#page_5_plainTextEdit_definition {
+background-color: rgba(171, 171, 171, 0);
+border:rgba(255, 255, 255, 0);
+}</string>
+    </property>
+    <widget class="QToolButton" name="page_5_btn_voice">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>100</y>
+       <width>30</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>voice.png</normaloff>voice.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="page_5_line_edit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>348</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_word_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>160</y>
+       <width>351</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="page_5_label_title">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>25</y>
+        <width>190</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="page_5_plainTextEdit_definition">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>311</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_10">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-10</y>
+       <width>411</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="lbl_search_2">
+        <property name="maximumSize">
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Meanings</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget_8" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>605</y>
+       <width>391</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  background-color: black;
+  selection-color: yellow;
+  selection-background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  color:white;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+QPushButton {
+border: rgba(255, 255, 255, 0);
+padding: 0 0 10 0;
+}
+
+QPushButton:pressed { 
+  margin: 0 1 0 1;
+}
+</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>0</y>
+        <width>391</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="page_5_btn_home">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>home.png</normaloff>home.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_5_btn_saved">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>saved.png</normaloff>saved.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="page_5_btn_settings">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>settings.png</normaloff>settings.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <zorder>page_5_line_edit</zorder>
+    <zorder>page_5_btn_voice</zorder>
+    <zorder>widget_word_2</zorder>
+    <zorder>horizontalLayoutWidget_10</zorder>
+    <zorder>widget_8</zorder>
+   </widget>
   </widget>
  </widget>
  <resources/>
